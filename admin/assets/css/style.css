@@ -1,0 +1,55 @@
+.box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+.error {
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 10px 15px;
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+.success {
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 10px 15px;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.head1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.flex-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.min-wd {
+  min-width: 250px;
+}
+
+.font-fam {
+  font-family: 'Poppins', sans-serif;
+  /* font-size: 17px; */
+}
+
+.form-control:focus {
+  box-shadow: 0 0 5pt 2pt #D3D3D3;
+}
+
+.form-control:hover {
+  box-shadow: 0 0 5pt 2pt #D3D3D3;
+  outline-width: 0px;
+}
+
+.fs-19 {
+  font-size: 19px !important;
+}
