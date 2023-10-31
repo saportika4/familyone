@@ -107,8 +107,8 @@ $(function() {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: "<i class='slick-prev icon ion-chevron-left'></i>",
-        nextArrow: "<i class='slick-next icon ion-chevron-right'></i>",
+        prevArrow: "<iconify-icon icon='ooui:next-rtl' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>",
+        nextArrow: "<iconify-icon icon='ooui:next-ltr' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>",
         fade: false,
         autoplay: false,
         autoplaySpeed: 4000,
@@ -163,7 +163,7 @@ $(function() {
         smartSpeed: 450,
         nav: false,
         nav: true,
-        navText: ["<i class='ion-chevron-left'></i>", "<i class='ion-chevron-right'></i>"],
+        navText: ["<iconify-icon icon='ooui:next-rtl' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>", "<iconify-icon icon='ooui:next-ltr' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>"],
         navContainer: '.owl-nav-custom-team',
         responsive: {
             0: {
@@ -206,7 +206,7 @@ $(function() {
         smartSpeed: 450,
         nav: false,
         nav: true,
-        navText: ["<i class='ion-chevron-left'></i>", "<i class='ion-chevron-right'></i>"],
+        navText: ["<iconify-icon icon='ooui:next-rtl' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>", "<iconify-icon icon='ooui:next-ltr' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>"],
         navContainer: '.owl-nav-custom-inside',
         responsive: {
             0: {
@@ -236,7 +236,7 @@ $(function() {
         smartSpeed: 450,
         nav: false,
         nav: true,
-        navText: ["<i class='ion-chevron-left'></i>", "<i class='ion-chevron-right'></i>"],
+        navText: ["<iconify-icon icon='ooui:next-rtl' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>", "<iconify-icon icon='ooui:next-ltr' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>"],
         navContainer: '.owl-nav-custom-news',
         responsive: {
             0: {
@@ -266,7 +266,7 @@ $(function() {
         smartSpeed: 450,
         nav: false,
         nav: true,
-        navText: ["<i class='ion-chevron-left'></i>", "<i class='ion-chevron-right'></i>"],
+        navText: ["<iconify-icon icon='ooui:next-rtl' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>", "<iconify-icon icon='ooui:next-ltr' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>"],
         navContainer: '.owl-nav-custom-news-all.owl-nav-custom-news-1',
         responsive: {
             0: {
@@ -296,7 +296,7 @@ $(function() {
         smartSpeed: 450,
         nav: false,
         nav: true,
-        navText: ["<i class='ion-chevron-left'></i>", "<i class='ion-chevron-right'></i>"],
+        navText: ["<iconify-icon icon='ooui:next-rtl' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>", "<iconify-icon icon='ooui:next-ltr' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>"],
         navContainer: '.owl-nav-custom-news-all.owl-nav-custom-news-2',
         responsive: {
             0: {
@@ -326,7 +326,7 @@ $(function() {
         smartSpeed: 450,
         nav: false,
         nav: true,
-        navText: ["<i class='ion-chevron-left'></i>", "<i class='ion-chevron-right'></i>"],
+        navText: ["<iconify-icon icon='ooui:next-rtl' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>", "<iconify-icon icon='ooui:next-ltr' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>"],
         navContainer: '.owl-nav-custom-news-all.owl-nav-custom-news-3',
         responsive: {
             0: {
@@ -356,7 +356,7 @@ $(function() {
         smartSpeed: 450,
         nav: false,
         nav: true,
-        navText: ["<i class='ion-chevron-left'></i>", "<i class='ion-chevron-right'></i>"],
+        navText: ["<iconify-icon icon='ooui:next-rtl' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>", "<iconify-icon icon='ooui:next-ltr' style='color: white; padding-top: 12px; padding-right: 3px;' width='25' height='25'></iconify-icon>"],
         navContainer: '.owl-nav-custom-news-all.owl-nav-custom-news-4',
         responsive: {
             0: {

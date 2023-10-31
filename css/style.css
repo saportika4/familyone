@@ -154,7 +154,7 @@ background-image: url(../img/services/offers/2.jpg);
 
 
 /* 1.7. inside IMG BACKGROUND */
-.carousel-item-inside-01 {
+/* .carousel-item-inside-01 {
 background-image: url(../img/inside/1.jpg);
 }
 
@@ -172,7 +172,7 @@ background-image: url(../img/inside/4.jpg);
 
 .carousel-item-inside-05 {
 background-image: url(../img/inside/5.jpg);
-}
+} */
 
 
 /* 1.8. news IMG BACKGROUND */
@@ -2907,11 +2907,11 @@ vertical-align: middle;
 }
 
 .center-block-contact-modal-padding-top {
-padding: 100px 0 0 0;
+padding: 20px 0 0 0;
 }
   
 .center-block-contact-modal-padding-bottom {
-padding: 0 0 100px 0;
+padding: 0 0 20px 0;
 }
 
 .contact-modal-wrapper {
@@ -8431,6 +8431,14 @@ margin: 2px 0 0 0;
   }
 }
 
+
+.next1 {
+  max-width: 50px;
+}
+
+.prev1 {
+  max-width: 50px;
+}
 
 /* copyright */
 .copyright a,

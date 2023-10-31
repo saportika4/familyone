@@ -245,7 +245,9 @@
                                         <circle class="circle" cx="25" cy="25" r="24"></circle>
                                     </svg>
                                 </span>
-                                <div class="ion-ios-arrow-left"></div>
+                                <!-- <div class="ion-ios-arrow-left"></div> -->
+                                <!-- <img src="images/previous.png" class="prev1" alt=""> -->
+                                <iconify-icon icon="ooui:next-rtl" style="color: white; padding-top: 12px; padding-right: 3px;" width="25" height="25"></iconify-icon>
                             </div>
                             <div class="swiper-slide-controls slide-next fadeIn-element">
                                 <span>
@@ -253,7 +255,9 @@
                                         <circle class="circle" cx="25" cy="25" r="24"></circle>
                                     </svg>
                                 </span>
-                                <div class="ion-ios-arrow-right"></div>
+                                <!-- <div class="ion-ios-arrow-right"></div> -->
+                                <!-- <img src="images/next.png" class="next1" alt=""> -->
+                                <iconify-icon icon="ooui:next-ltr" style="color: white; padding-top: 12px; padding-left: 3px;" width="25" height="25"></iconify-icon>
                             </div>
                         </div>
                         <!-- swiper slider controls end -->
@@ -481,71 +485,37 @@
                 <div class="carousel-item-img-wrapper carousel-item-img-wrapper-all">
                     <div class="extra-margin-owl">
                         <div class="owl-carousel owl-carousel-inside popup-photo-gallery">
+
+                            <?php
+
+                                require ('admin/db.php');
+
+                                $sql = "SELECT * FROM events ORDER BY id DESC";
+                                $res = mysqli_query($conn,  $sql);
+
+                                if (mysqli_num_rows($res) > 0) {
+                                    while ($row = mysqli_fetch_assoc($res)) { 
+                                    $id = $row['id'];
+                                    $image = $row['img_url'];
+
+                            ?>
+                                            
                             <!-- section item start -->
                             <div class="post-box hover-effect-img">
                                 <div class="hover-icons">
-                                    <a class="ion-plus popup-photo-gallery-open" href="img/inside/1.jpg" title="IMG Description"></a>                                
+                                    <a class="popup-photo-gallery-open" href="admin/assets/uploads/events/<?=$image?>" title=""><iconify-icon icon="tdesign:fullscreen" style="color: white;" width="50" height="50"></iconify-icon></a>                                
                                 </div>
                                 <!-- circle wrapper start -->
                                 <div class="circle-wrapper-full">
-                                    <div class="carousel-item-all carousel-item-inside-01"></div>
+                                    <div class="carousel-item-all carousel-item-inside-01" style="background-image: url('admin/assets/uploads/events/<?=$image?>');"></div>
                                 </div>
                                 <!-- circle wrapper end -->
                                 <div class="hover-effect the-team"></div>
                             </div>
                             <!-- section item end -->
-                            <!-- section item start -->
-                            <div class="post-box hover-effect-img">
-                                <div class="hover-icons">
-                                    <a class="ion-plus popup-photo-gallery-open" href="img/inside/2.jpg" title="IMG Description"></a>                                
-                                </div>
-                                <!-- circle wrapper start -->
-                                <div class="circle-wrapper-full">
-                                    <div class="carousel-item-all carousel-item-inside-02"></div>
-                                </div>
-                                <!-- circle wrapper end -->
-                                <div class="hover-effect the-team"></div>
-                            </div>
-                            <!-- section item end -->
-                            <!-- section item start -->
-                            <div class="post-box hover-effect-img">
-                                <div class="hover-icons">
-                                    <a class="ion-plus popup-photo-gallery-open" href="img/inside/3.jpg" title="IMG Description"></a>                                
-                                </div>
-                                <!-- circle wrapper start -->
-                                <div class="circle-wrapper-full">
-                                    <div class="carousel-item-all carousel-item-inside-03"></div>
-                                </div>
-                                <!-- circle wrapper end -->
-                                <div class="hover-effect the-team"></div>
-                            </div>
-                            <!-- section item end -->
-                            <!-- section item start -->
-                            <div class="post-box hover-effect-img">
-                                <div class="hover-icons">
-                                    <a class="ion-plus popup-photo-gallery-open" href="img/inside/4.jpg" title="IMG Description"></a>                                
-                                </div>
-                                <!-- circle wrapper start -->
-                                <div class="circle-wrapper-full">
-                                    <div class="carousel-item-all carousel-item-inside-04"></div>
-                                </div>
-                                <!-- circle wrapper end -->
-                                <div class="hover-effect the-team"></div>
-                            </div>
-                            <!-- section item end -->
-                            <!-- section item start -->
-                            <div class="post-box hover-effect-img">
-                                <div class="hover-icons">
-                                    <a class="ion-plus popup-photo-gallery-open" href="img/inside/5.jpg" title="IMG Description"></a>                                
-                                </div>
-                                <!-- circle wrapper start -->
-                                <div class="circle-wrapper-full">
-                                    <div class="carousel-item-all carousel-item-inside-05"></div>
-                                </div>
-                                <!-- circle wrapper end -->
-                                <div class="hover-effect the-team"></div>
-                            </div>
-                            <!-- section item end -->
+
+                            <?php } }?>
+                            
                         </div>
                     </div>
                 </div>
@@ -632,11 +602,12 @@
                                 <!-- col start -->
                                 <div class="col-md-4 col-sm-12">
                                     <div class="contact-info-description">
-                                        <i class="ion-ios-location-outline contact-info-description-img"></i>
+                                        <!-- <i class="ion-ios-location-outline contact-info-description-img"></i> -->
+                                        <iconify-icon icon="ion:location-outline" style="color: white;" width="50" height="50"></iconify-icon>
                                         <!-- divider start -->
                                         <div class="divider-m"></div>
                                         <!-- divider end -->
-                                        <span class="contact-info-text">ex Inc. Touchdown Dr 1176</span>
+                                        <span class="contact-info-text">FAMILYONE CAFE RESTAURANT VIII 464, EDAVANAKAD.P.O VYPPIN 682502 KERALA</span>
                                     </div>
                                     <!-- divider start -->
                                     <div class="divider-m visible-mobile-devices"></div>
@@ -646,11 +617,12 @@
                                 <!-- col start -->
                                 <div class="col-md-4 col-sm-12">
                                     <div class="contact-info-description">
-                                        <i class="ion-ios-telephone-outline contact-info-description-img large"></i>
+                                        <!-- <i class="ion-ios-telephone-outline contact-info-description-img large"></i> -->
+                                        <iconify-icon icon="ph:phone" style="color: white;" width="50" height="50"></iconify-icon>
                                         <!-- divider start -->
                                         <div class="divider-m"></div>
                                         <!-- divider end -->
-                                        <span class="contact-info-text large">+123 456 7890</span>
+                                        <span class="contact-info-text large">+91 9388968897</span>
                                     </div>
                                     <!-- divider start -->
                                     <div class="divider-m visible-mobile-devices"></div>
@@ -660,11 +632,12 @@
                                 <!-- col start -->
                                 <div class="col-md-4 col-sm-12">
                                     <div class="contact-info-description">
-                                        <i class="ion-ios-email-outline contact-info-description-img"></i>
+                                        <!-- <i class="ion-ios-email-outline contact-info-description-img"></i> -->
+                                        <iconify-icon icon="system-uicons:mail" style="color: white;" width="50" height="50"></iconify-icon>
                                         <!-- divider start -->
                                         <div class="divider-m"></div>
                                         <!-- divider end -->
-                                        <span class="contact-info-text"><a class="link-effect link-effect-light" href="mailto:contact@domainname.com">contact@domainname.com</a></span>
+                                        <span class="contact-info-text"><a class="link-effect link-effect-light" href="mailto:familyoneytc@gmail.com">familyoneytc@gmail.com</a></span>
                                     </div>
                                 </div>
                                 <!-- col end -->
@@ -850,9 +823,7 @@
                     <div id="google-maps-wrapper">
                         <!-- google maps start -->
                         <div class="google-maps">
-                            <iframe src=
-                                "https://maps.google.com/maps/ms?msa=0&amp;msid=211966962386664154949.0004e6fcf6a48ede4754f&amp;hl=en&amp;ie=UTF8&amp;t=m&amp;iwloc=0004e6fcfe81051738dcb&amp;ll=48.857981,2.293514&amp;spn=0,0&amp;z=10&amp;output=embed">
-                            </iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3930.0444665548075!2d76.25224687503022!3d9.930254890171593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwNTUnNDguOSJOIDc2wrAxNScxNy40IkU!5e0!3m2!1sen!2sin!4v1698344409228!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <!-- google maps end -->
                     </div>
@@ -892,10 +863,10 @@
                         <div class="social-icons">
                             <ul>
                                 <li>
-                                    <a class="ion-social-youtube" href="www.youtube.com/c/FamilyOne"><span>Youtube</span></a>                                
+                                    <a class="" href="www.youtube.com/c/FamilyOne"><iconify-icon icon="uil:youtube" style="color: #5f5f5f;" width="50" height="50"></iconify-icon></a>                                
                                 </li>
                                 <li>
-                                    <a class="ion-social-instagram" href="https://www.instagram.com/fa_mi_ly_on_e/"><span>Instagram</span></a>                                
+                                    <a class="" href="https://www.instagram.com/fa_mi_ly_on_e/"><iconify-icon icon="mdi:instagram" style="color: #5f5f5f;" width="50" height="50"></iconify-icon></a>                                
                                 </li>
                             </ul>
                         </div>
@@ -942,7 +913,7 @@
         <!-- to top arrow start -->
         <a href="#home">
             <div class="to-top-arrow">
-                <span class="ion-ios-arrow-up"></span>
+            <img src="images/arrowhead-up.png" style="max-width: 44px;" alt="">
             </div>
         </a>
         <!-- to top arrow end -->
@@ -984,6 +955,7 @@
         <!-- scripts start -->
         <script src="js/plugins.js"></script> 
         <script src="js/dinex.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
         <!-- scripts end -->
     </body>
 </html>
